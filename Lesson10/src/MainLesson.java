@@ -6,10 +6,9 @@ public class MainLesson {
 
     public static void main(String[] args) {
         while (true) {
-            String name = inputBookName();
-            addBook(name);
-            addBook(name, amountOfPages());
-            addBook(name, amountOfPages(), priceOfBook());
+            addBook(inputBookName());
+            addBook(inputBookName(), amountOfPages());
+            addBook(inputBookName(), amountOfPages(), priceOfBook());
             printInfo();
         }
     }
@@ -17,10 +16,6 @@ public class MainLesson {
     public static String inputBookName() {
         System.out.println("Enter a book name: ");
         return new Scanner(System.in).nextLine();
-    }
-
-    public static void addBook(String bookName) {
-        addBook(bookName, 0);
     }
 
     public static int amountOfPages(){
@@ -31,6 +26,10 @@ public class MainLesson {
     public static double priceOfBook(){
         System.out.println("Enter price of the book: ");
         return new Scanner(System.in).nextDouble();
+    }
+
+    public static void addBook(String bookName) {
+        addBook(bookName, 0);
     }
 
     public static void addBook(String bookName, int pageCount){
