@@ -21,10 +21,10 @@ public class Phone {
 
 
     public void receiveCall(String callerName){
-        System.out.println(callerName + " is calling to you");
+        receiveCall(callerName, "");
     }
 
     public void receiveCall(String callerName, String phoneNumber){
-        System.out.println(callerName + " is calling to you\nphone number: " + phoneNumber);
+        System.out.println(callerName + " is calling to you\nphone number: " + (phoneNumber.isEmpty() ? "" : phoneNumber));
     }
 }
