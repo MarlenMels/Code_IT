@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class LessonMain {
 
-    public static final String CORRECT_CHARS = " абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
+    public static final String CORRECT_CHARS = " -абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
 
     public static void main(String[] args) {
 
