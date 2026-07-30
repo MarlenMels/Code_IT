@@ -3,12 +3,12 @@ package Task3.src;
 import java.util.Scanner;
 
 public class Main3 {
+    private static final String REGEX = "([А-ЯЁа-яё-]+\\s+){2}[А-ЯЁа-яё-]+\\s*";
     public static void main(String[] args) {
         //todo ФИО
         String str = new Scanner(System.in).nextLine();
-        boolean check = str.matches("([А-ЯЁа-яё-]+\\s+){2}[А-ЯЁа-яё-]+\\s*");
 
-        if(check){
+        if(str.matches(REGEX)){
             String[] parts = str.split("\\s+");
             System.out.println("Фамилия: " + parts[0]);
             System.out.println("Имя: " + parts[1]);
