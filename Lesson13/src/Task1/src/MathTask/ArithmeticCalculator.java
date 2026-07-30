@@ -9,13 +9,15 @@ public class ArithmeticCalculator {
         this.n2 = n2;
     }
 
-    public void calculate(Operation operation){
-        if(operation == Operation.ADD){
+    public void calculate(Operation operation) {
+        if (operation == Operation.ADD) {
             System.out.println("Sum of two numbers equal to: " + (n1 + n2));
-        } else if(operation == Operation.SUBTRACT){
+        } else if (operation == Operation.SUBTRACT) {
             System.out.println("Substraction of two numbers equal to: " + (n1 - n2));
-        } else if(operation == Operation.MULTIPLY){
+        } else if (operation == Operation.MULTIPLY) {
             System.out.println("Multiplication of two numbers equal to: " + (n1 * n2));
+        } else {
+            System.out.println("Unknown command");
         }
     }
 }

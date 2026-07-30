@@ -1,13 +1,12 @@
 package Task3.src;
 
 import java.util.Scanner;
-import java.util.regex.Pattern;
 
 public class Main3 {
     public static void main(String[] args) {
         //todo ФИО
         String str = new Scanner(System.in).nextLine();
-        boolean check = str.matches("[А-ЯЁа-яё-]+\\s+[А-ЯЁа-яё-]+\\s+[А-ЯЁа-яё-]+\\s*");
+        boolean check = str.matches("([А-ЯЁа-яё-]+\\s+){2}[А-ЯЁа-яё-]+\\s*");
 
         if(check){
             String[] parts = str.split("\\s+");
@@ -24,6 +23,3 @@ public class Main3 {
         }
     }
 }
-
-//.replaceAll("\\s+[А-ЯЁа-яё-]+\\s*", "")
-//Мэлс Марлен Марсович
